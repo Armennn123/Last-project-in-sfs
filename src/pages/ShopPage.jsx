@@ -11,7 +11,7 @@ function ShopPage() {
   }, []);
   if (!products) {
    return <div>
-      <div className="flex-col gap-4 w-full flex items-center justify-center">
+      <div className="flex-col gap-4 w-full h-screen flex items-center justify-center">
         <div className="w-28 h-28 border-8 text-blue-400 text-4xl animate-spin border-gray-300 flex items-center justify-center border-t-blue-400 rounded-full">
           <svg
             viewBox="0 0 24 24"
@@ -27,9 +27,9 @@ function ShopPage() {
     </div>;
   }
   return (
-    <div >
+    <div>
       <Header />
-      <h1> ARDI SHop</h1>
+      <h1 className="text-center"> ARDI SHop</h1>
       <div className="max-w-[1440px] mx-auto pt-8 flex  flex-wrap justify-center gap-8">
         {products.map((e) => (
           <Card key={e.id} id={e.id} title={e.title} price={e.price} img={e.images[0]} />

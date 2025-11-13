@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <header className='flex justify-around p-7 bg-gradient-to-r  from-orange-500 to-blue-400'>
+    <header className='flex text-white justify-around p-7 bg-black'>
         <div>
-            <Link to={'/'}>Logo</Link>
+            <Link className='' to={'/'}>Logo</Link>
         </div>
         <nav>
             <ul className='flex gap-8'>
